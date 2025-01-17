@@ -1,0 +1,33 @@
+{
+  "name": "chrome.runtime.reload",
+  "description": "Uses the chrome.runtime.reload API by creating a new keyboard macro for reloading code.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/tabFlipper16.png",
+      "32": "images/tabFlipper32.png",
+      "48": "images/tabFlipper48.png",
+      "128": "images/tabFlipper128.png"
+    },
+    "default_title": "Press Alt(Win)/Option(Mac)+R to reload code"
+  },
+  "commands": {
+    "reload-command": {
+      "suggested_key": {
+        "default": "Alt+R",
+        "mac": "Alt+R"
+      },
+      "description": "Flip tabs forward"
+    }
+  },
+  "icons": {
+    "16": "images/tabFlipper16.png",
+    "32": "images/tabFlipper32.png",
+    "48": "images/tabFlipper48.png",
+    "128": "images/tabFlipper128.png"
+  }
+}
